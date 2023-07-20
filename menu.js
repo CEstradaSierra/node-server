@@ -1,4 +1,11 @@
-const {taskList,genId,addTask,deleteTask,toggleTask,showList}=require("./modules/taskList");  
+const {
+  taskList,
+  genId,
+  addTask,
+  deleteTask,
+  toggleTask,
+  showList,
+} = require("./modules/taskList");
 const readline = require("readline");
 //console.log(readline)
 /*debo crear una funcion menu para seleccionar una opcion, debo usar switch
@@ -9,39 +16,6 @@ const menu = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
 });
-
-
-/* 
-
-function toggleTask() {
-  if (taskList.length == 0) {
-    console.log("Empty task list");
-    selectMenu();
-  } else {
-    console.log(" select the number of the task to mark");
-    for (let i = 0; i < taskList.length; i++) {
-      console.log(`${i+1}. task name: ${taskList[i].name}`);
-    }
-    menu.question(
-      "select the task that you want to mark as complete: ",
-      (number) => {
-        taskList[number-1].state = !taskList[number-1].state;
-        
-        console.log("task completed");
-        selectMenu();
-      }
-    );
-  }
- 
-}
- */
-/*creo una funcion para eliminar tarea  */
-/* function showList(arr) {
-  arr.map((item) => {
-    console.log(item);
-  });
-} */
-
 function selectMenu() {
   console.log("Menu to creat tasks:");
   console.log("1. Select to add task");
@@ -54,49 +28,56 @@ function selectMenu() {
     switch (opcion.toLowerCase().replace(" ", "")) {
       case "uno":
       case "1":
-        menu.question("Enter Task name: ",(name)=>{
-          menu.question("Enter Task description: ",(description)=>{
-            addTask(name,description);
-            selectMenu()
-          })
-        })
+        menu.question("Enter Task name: ", (name) => {
+          menu.question("Enter Task description: ", (description) => {
+            addTask(name, description);
+            selectMenu();
+          });
+        });
         break;
 
       case "dos":
       case "2":
-        if(taskList.length===0){
+        if (taskList.length === 0) {
           console.log("Empty task list");
           selectMenu();
-        }else{
-          console.log("Select the Number of the Task that you want to mark as complete: ")
-          for(let i=0; i<taskList.length; i++){
-            console.log(`Mark ${i+1} if you want to delete ${taskList[i].name}`)
+        } else {
+          console.log(
+            "Select the Number of the Task that you want to mark as complete: "
+          );
+          for (let i = 0; i < taskList.length; i++) {
+            console.log(
+              `Mark ${i + 1} if you want to delete ${taskList[i].name}`
+            );
           }
-          menu.question("Select Task: ",(number)=>{
+          menu.question("Select Task: ", (number) => {
             toggleTask(number);
-            selectMenu()
-
-          })
+            selectMenu();
+          });
         }
         break;
 
       case "tres":
       case "3":
-        if(taskList.length===0){
+        if (taskList.length === 0) {
           console.log("Empty task list");
           selectMenu();
-        }else{
-          console.log("Select the Number of the Task that you want to delete: ")
-          for(let i=0; i<taskList.length; i++){
-            console.log(`mark ${i+1} if you want to delete ${taskList[i].name}`)
+        } else {
+          console.log(
+            "Select the Number of the Task that you want to delete: "
+          );
+          for (let i = 0; i < taskList.length; i++) {
+            console.log(
+              `mark ${i + 1} if you want to delete ${taskList[i].name}`
+            );
           }
-          menu.question("select task: ",(number)=>{
+          menu.question("select task: ", (number) => {
             deleteTask(number);
-            selectMenu()
-          })
+            selectMenu();
+          });
         }
         break;
-      
+
       case "cuatro":
       case "4":
         showList(taskList);
@@ -107,7 +88,7 @@ function selectMenu() {
         menu.close();
         break;
       default:
-        console.log("invalid value")
+        console.log("invalid value");
         selectMenu();
         break;
     }
