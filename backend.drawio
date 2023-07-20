@@ -1,0 +1,64 @@
+<mxfile host="Electron" modified="2023-07-13T23:29:00.002Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.3.7 Chrome/112.0.5615.204 Electron/24.5.0 Safari/537.36" etag="prE-depbhP0q8KR9BOLO" version="21.3.7" type="device">
+  <diagram name="Página-1" id="nfkvfAoMZ8AFwp6Zt2qz">
+    <mxGraphModel dx="1338" dy="648" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="se_hhaS42cc1e4ot7z83-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="se_hhaS42cc1e4ot7z83-1" target="se_hhaS42cc1e4ot7z83-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="se_hhaS42cc1e4ot7z83-1" value="start&lt;br&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="290" y="10" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="se_hhaS42cc1e4ot7z83-2" value="terminator" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="290" y="610" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="se_hhaS42cc1e4ot7z83-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="se_hhaS42cc1e4ot7z83-3" target="se_hhaS42cc1e4ot7z83-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="se_hhaS42cc1e4ot7z83-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="se_hhaS42cc1e4ot7z83-3" target="se_hhaS42cc1e4ot7z83-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="se_hhaS42cc1e4ot7z83-3" value="1. inicializar un proyecto npm" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="se_hhaS42cc1e4ot7z83-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="se_hhaS42cc1e4ot7z83-5" target="se_hhaS42cc1e4ot7z83-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="se_hhaS42cc1e4ot7z83-5" value="se hace en la terminal de comandos con npm init" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="se_hhaS42cc1e4ot7z83-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="se_hhaS42cc1e4ot7z83-7" target="se_hhaS42cc1e4ot7z83-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="se_hhaS42cc1e4ot7z83-7" value="cuando lo haga me hara una serie de preguntas las cuales seran nombre, descpriticion , repositorio de git etc" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="627" y="110" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="se_hhaS42cc1e4ot7z83-9" value="se me crrea un package json" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="se_hhaS42cc1e4ot7z83-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="se_hhaS42cc1e4ot7z83-11" target="se_hhaS42cc1e4ot7z83-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="se_hhaS42cc1e4ot7z83-11" value="2. Creacion de un script" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="se_hhaS42cc1e4ot7z83-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="se_hhaS42cc1e4ot7z83-13" target="se_hhaS42cc1e4ot7z83-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="se_hhaS42cc1e4ot7z83-13" value="voy al package json en scripts&amp;nbsp;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="494" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="se_hhaS42cc1e4ot7z83-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="se_hhaS42cc1e4ot7z83-15" target="se_hhaS42cc1e4ot7z83-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="se_hhaS42cc1e4ot7z83-15" value="agrego el script createTask" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="se_hhaS42cc1e4ot7z83-17" value="en la terminal npm run createTask" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
