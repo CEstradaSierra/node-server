@@ -30,8 +30,12 @@ function selectMenu() {
       case "1":
         menu.question("Enter Task name: ", (name) => {
           menu.question("Enter Task description: ", (description) => {
-            addTask(name, description);
-            selectMenu();
+            addTask(name, description).then((message) => {
+              console.log(message);
+            });
+            setTimeout(() => {
+              selectMenu();
+            }, 2200);
           });
         });
         break;
@@ -47,12 +51,18 @@ function selectMenu() {
           );
           for (let i = 0; i < taskList.length; i++) {
             console.log(
-              `Mark ${i + 1} if you want to delete ${taskList[i].name}`
+              `Mark ${i + 1} if you want to toggle ${taskList[i].name}`
             );
           }
           menu.question("Select Task: ", (number) => {
-            toggleTask(number);
-            selectMenu();
+            async function toggle() {
+              const toggleT = await toggleTask(number);
+              console.log(toggleT);
+            }
+            toggle();
+            setTimeout(() => {
+              selectMenu();
+            }, 2200);
           });
         }
         break;
@@ -71,9 +81,13 @@ function selectMenu() {
               `mark ${i + 1} if you want to delete ${taskList[i].name}`
             );
           }
-          menu.question("select task: ", (number) => {
-            deleteTask(number);
-            selectMenu();
+          menu.question("Select task: ", (number) => {
+            deleteTask(number).then((task) => {
+              console.log(task);
+            });
+            setTimeout(() => {
+              selectMenu();
+            }, 2200);
           });
         }
         break;
