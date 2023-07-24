@@ -51,7 +51,7 @@ function selectMenu() {
           );
           for (let i = 0; i < taskList.length; i++) {
             console.log(
-              `Mark ${i + 1} if you want to toggle ${taskList[i].name}`
+              `Mark (${i + 1}) if you want to toggle ${taskList[i].name}`
             );
           }
           menu.question("Select Task: ", (number) => {
@@ -78,7 +78,7 @@ function selectMenu() {
           );
           for (let i = 0; i < taskList.length; i++) {
             console.log(
-              `mark ${i + 1} if you want to delete ${taskList[i].name}`
+              `mark (${i + 1}) if you want to delete ${taskList[i].name}`
             );
           }
           menu.question("Select task: ", (number) => {
