@@ -58,6 +58,27 @@ function showList(arr) {
   }
 }
 
+/*-------------------------------------------------------- */
+// update task 
+//quiero crear una funcion que reciba el nombre y me permita cambiar el nombre y la descripcion
+
+function updateTask(name,nuevoNombre,nuevaDescripcion){
+  //buscar la el indice de la tarea que coincida con el nombre
+  let indiceTarea= taskList.findIndex((task)=>task.name==name)
+  if(indiceTarea !==-1){
+   
+    // debo crear un nuevo arreglo  
+    // debo recorrer el arreglo buscando actualizar el nombre y la descripcion
+    const tareaEditada=taskList.map((task)=>{
+      return {...task,name:nuevoNombre,description:nuevaDescripcion}
+    })
+    return tareaEditada
+  }
+
+
+}
+
+
 const group = {
   taskList: taskList,
   genId: genId,

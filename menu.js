@@ -110,3 +110,10 @@ function selectMenu() {
 }
 
 selectMenu();
+
+
+const grupo={
+  selectMenu:selectMenu,
+  taskList:taskList,
+}
+module.exports = grupo
